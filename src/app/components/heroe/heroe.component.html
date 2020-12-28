@@ -1,0 +1,13 @@
+<h2>{{heroe.nombre | uppercase}} <small>{{heroe.casa}} - {{heroe.aparicion}}</small></h2>
+<hr>
+<div class="row">
+    <div class="col md-4">
+        <img [src]="heroe.img" [alt]="heroe.nombre">
+        <br><br>
+        <a [routerLink]="['/heroes']" class="btn btn-outline-danger btn-block">Regresar</a>
+    </div>
+
+    <div class="col md-8">
+        <p>{{heroe.bio}}</p>
+    </div>
+</div>
